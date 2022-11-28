@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 63.5%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: url(images/pattern-background-desktop.svg) no-repeat var(--paleblue);
+    background-size: contain;
+    /* background-position: center; */
+}
+
+.container{
+    width: 42rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.container .image img{
+    width: 100%;
+    height: 20rem;
+}
+
+.text{
+    text-align: center;
+    padding: 4rem;
+}
+
+.text h1{
+    color: var(--darkblue);
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.text p{
+    font-size: 1.6rem;
+    color: var(--desaturatedblue);
+    /* width: ; */
+}
+
+.plan{
+    display: flex;
+    background: var(--verypaleblue);
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+.plan .left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.plan .left h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.plan .right a{
+    font-weight: 700;
+}
+.plan .right a:hover{
+    text-decoration: none;
+    color: hsl(264, 100%, 55%);
+    font-weight: 700;
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    background: var(--brightblue);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: .2rem 1.5rem 1.6rem var(--paleblue);
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    background: hsl(264, 100%, 55%);
+}
+
+.cancel-btn{
+    display: inline-block;
+    width: 100%;
+    padding: 1.2;
+    color: var(--desaturatedblue);
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.cancel-btn:hover{
+    color: var(--darkblue);
+}
+
+footer{
+    font-size: 1.2rem;
+}
